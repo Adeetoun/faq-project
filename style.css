@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@import url('https://fonts.google.com/specimen/Work+Sans');
+
+body{
+    background: url('img/background-pattern-desktop.svg') no-repeat;
+    background-color: hsl(275, 100%, 97%);
+    font-family: 'Work Sans', sans-serif;
+    font-size: 16px;
+    min-height: 100vh;
+    background-size: 100%;
+    display: grid;
+    place-content: center;
+}
+.container{
+    background: hsl(0, 0%, 100%);
+    line-height: 1.6;
+    margin: 20px;
+    max-width: 800px;
+    justify-self: center;
+    align-items: center;
+    padding:20px;
+    border-radius: 20px;
+}
+h1{
+    font-weight: bold;
+    margin: 20px;
+    display: flex;
+}
+p{
+ color: hsl(292, 16%, 49%);
+ padding: 10px;
+}
+.question{
+    border: 0;
+    font-weight: 600;
+    background-color: transparent;
+    font-size: 16px;
+    margin-top: 15px;
+    width:100%;
+    cursor: pointer;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.question:hover{
+    color: purple;
+ }
+.minus {
+    display: none;
+}
+.hidden{
+    padding: 15px;
+    display: none;
+}
+@media(max-width:546px) {
+ body{
+    background-image: url('img/background-pattern-mobile.svg');
+ }
+}
